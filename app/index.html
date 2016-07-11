@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/payment_testing.css">
+    <script type="text/javascript" src="js/vendors.js"></script>
+
+    <script type="text/javascript" src="js/vendors.js"></script>
+    <script type="text/javascript" src="js/payment_testing_app.js"></script>
+    <script type="text/javascript" src="js/payment_controllers.js"></script>
+    <script type="text/javascript" src="js/payment_directives.js"></script>
+    <script type="text/javascript" src="js/payment_services.js"></script>
+    <script type="text/javascript" src="js/payment_testing_templates.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="paymentTestingApp">
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">paymentTesting</a>
+          </div>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-xs-12">
+            <div ng-view></div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script type="text/javascript">
+      angular.module('paymentTestingApp').constant("api_config", {
+        "api_end_point": '127.0.0.1/api/'
+      })
+    </script>
+  </body>
+</html>

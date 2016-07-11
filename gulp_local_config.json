@@ -1,0 +1,48 @@
+{
+  "coffee_dir"   : "./src/coffee/",
+  "stylus_dir"   : "./src/stylus/",
+  "template_dir" : "./src/templates/",
+  "compiled_js_dest"  : "./app/js/",
+  "compiled_css_dest" : "./app/css/",
+  "js_vendors": [
+    "./bower_components/jquery/dist/jquery.min.js",
+    "./bower_components/bootstrap/dist/js/bootstrap.min.js",
+    "./bower_components/angular/angular.min.js",
+    "./bower_components/angular-resource/angular-resource.min.js",
+    "./bower_components/angular-route/angular-route.min.js",
+    "./bower_components/angular-sanitize/angular-sanitize.min.js",
+    "./bower_components/angular-cookies/angular-cookies.min.js"
+  ],
+  "css_vendors": [
+    "./bower_components/bootstrap/dist/css/bootstrap.min.css"
+  ],
+  "coffee_tasks": {
+    "compile-main-app" : {
+        "src" : "payment_testing_app.coffee",
+        "dest": "payment_testing_app.js",
+        "watchable" : true
+    },
+    "compile-directives" : {
+      "src" : "directives/*.coffee",
+      "dest": "payment_directives.js" ,
+      "watchable" : true
+    },
+    "compile-services" : {
+      "src" : "services/*.coffee",
+      "dest": "payment_services.js" ,
+      "watchable" : true
+    },
+    "compile-controllers" : {
+      "src" : "controllers/*.coffee",
+      "dest": "payment_controllers.js" ,
+      "watchable" : true
+    }
+  },
+  "stylus_tasks": {
+    "compile-common" : {
+      "src" : "*.styl",
+      "dest": "payment_testing.css" ,
+      "watchable" : true
+    }
+  }
+}

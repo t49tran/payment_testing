@@ -1,0 +1,27 @@
+{
+  "name": "payment-testing",
+  "version": "0.1.0",
+  "author": {
+    "name": "duongtran",
+    "email": "tranthaiduong1210@gmail.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "2.13.0",
+    "gulp": "^3.8.7",
+    "gulp-angular-templatecache": "2.0.0",
+    "gulp-coffee": "^2.3.2",
+    "gulp-concat": "^2.3.4",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-scp2": "0.2.0",
+    "gulp-stylus": "2.5.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-uglifycss": "1.0.6",
+    "gulp-watch": "4.3.8",
+    "jshint-stylish": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

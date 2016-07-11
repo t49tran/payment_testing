@@ -1,0 +1,45 @@
+css_direction = (top left bottom right)
+
+for z in (0..10) {
+  .z-{z} {
+    z-index z
+  }
+  .padding-{z} {
+    padding (z*1)em !important
+  }
+  .margin-{z} {
+    margin (z*1)em !important
+  }
+  .margin-centered-{z} {
+    margin (z*1)em auto
+  }
+  .separator-{z} {
+    height (z*1)em
+  }
+  .text-size-{z}{
+    font-size (z*1)em !important
+  }
+  .border-{z}{
+    border (z*1)px solid #ccc !important
+  }
+
+  for d in css_direction{
+    .border-{d}-{z}{
+      border-{d} (z*1)px solid #ccc !important
+    }
+    .margin-{d}-{z}{
+      margin-{d} (z*1)em !important
+    }
+    .padding-{d}-{z}{
+      padding-{d} (z*1)em !important
+    }
+    .{d}-{z}{
+      {d} (z*1)em !important
+    }
+    for e in css_direction{
+      .border-{d}-{e}-radius-{z}{
+        border-{d}-{e}-radius (z*1)% !important
+      }
+    }
+  }
+}

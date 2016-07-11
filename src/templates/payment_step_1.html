@@ -1,0 +1,28 @@
+<form ng-init="init()" id="step1">
+  <div class="row padding-bottom-1">
+      <div class="col-xs-6">
+          <input placeholder="First Name" ng-model="personalData.firstName" ng-pattern="patterns.alphabetical" ng-required class="form-control">
+      </div>
+      <div class="col-xs-6">
+          <input placeholder="Last Name"  ng-model="personalData.lastName" ng-pattern="patterns.alphabetical" ng-required class="form-control">
+      </div>
+  </div>
+  <div class="row padding-bottom-1">
+      <div class="col-xs-12">
+          <input placeholder="Email" ng-model="personalData.email" type="email" ng-required class="form-control">
+      </div>
+  </div>
+  <div class="row padding-bottom-1">
+      <div class="col-xs-12">
+          <input placeholder="Phone" ng-model="personalData.phone" ng-pattern="patterns.phoneNumber" class="form-control">
+      </div>
+  </div>
+  <div class="row padding-bottom-1">
+    <div class="col-xs-12">
+      <button ng-click="nextStep()">Next Step</button>
+    </div>
+  </div>
+</form>
+
+
+
