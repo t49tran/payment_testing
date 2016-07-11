@@ -80,4 +80,4 @@ gulp.task('build-css',()->
 
 )
 
-gulp.task('default', ['app-watch']);
+gulp.task('default', ['combine-vendor','app-watch']);
